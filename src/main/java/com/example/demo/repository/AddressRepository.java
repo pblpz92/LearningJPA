@@ -2,12 +2,10 @@ package com.example.demo.repository;
 
 import com.example.demo.domain.Address;
 import jakarta.persistence.EntityManager;
-import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 @Repository
-@Transactional
 public class AddressRepository {
 
     @Autowired

@@ -6,10 +6,12 @@ import com.example.demo.domain.Student;
 import com.example.demo.repository.CourseRepository;
 import com.example.demo.repository.ReviewRepository;
 import com.example.demo.repository.StudentRepository;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
+@Transactional
 public class DeleteService {
 
     @Autowired
